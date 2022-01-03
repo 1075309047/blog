@@ -3,19 +3,20 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: 无题
+subtitle: '副标题'
+description: '这个人很懒，就留下了一句话。'
 keywords:
-author: John Doe
-language: en
+author: lzc
+language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://1075309047.github.io/blog
 root: /blog/
-permalink: :year/:month/:day/:title/
+# permalink: :year/:month/:day/:title/
+permalink: post/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -41,7 +42,8 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+# 引用本地资源
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -105,3 +107,33 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# hexo-generator-search
+search:
+  path: search.xml
+  field: all # post page all
+  content: true
+  template:
+
+# hexo-generator-feed
+feed:
+  enable: true
+  type: rss2
+  path: rss2.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
+
+# hexo-generator-sitemap
+sitemap:
+  path: sitemap.xml
+  template:
+  rel: false
+  tags: true
+  categories: true

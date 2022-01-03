@@ -1,4 +1,4 @@
-# 如果存在同名配置，主题 _config.butterfly.yml 里的配置优先级高于框架 _config.yml 里的配置。
+# Hexo會自動合併主題中的_config.yml和_config.butterfly.yml裏的配置，如果存在同名配置，會使用_config.butterfly.yml的配置，其優先度較高。
 # Main menu navigation (導航目錄)
 # --------------------------------------
 
@@ -7,16 +7,30 @@
 # name || icon:
 #   name: link || icon
 
+# 必须是 /xxx/，后面||分开，然后写图标名（可不写）。
 menu:
-  # Home: / || fas fa-home
-  # Archives: /archives/ || fas fa-archive
-  # Tags: /tags/ || fas fa-tags
-  # Categories: /categories/ || fas fa-folder-open
-  # List||fas fa-list:
-  #   Music: /music/ || fas fa-music
-  #   Movie: /movies/ || fas fa-video
-  # Link: /link/ || fas fa-link
-  # About: /about/ || fas fa-heart
+  首页: / || fas fa-home
+  时间轴: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  生活||fas fa-heartbeat:
+    文字: /post/life/word/index/ || fas fa-file-alt # 说说、随笔、文章
+    照片: /post/life/photo/index/ || fas fa-camera # 摄像、美食、旅游
+    # 录音: /post/life/recording/index/ || fas fa-volume-up
+    # 视频: /post/life/video/index/ || fas fa-video
+  清单||fas fa-list:
+    阅读: /post/list/reading/index/ || fas fa-book # 小说、漫画、杂志、图书
+    图画: /post/list/picture/index/ || fas fa-images # 海报、壁纸、插画
+    音频: /post/list/audio/index/ || fas fa-headphones
+    音乐: /post/list/music/index/ || fas fa-music # 歌曲、mv、混剪
+    影视: /post/list/movies/index/ || fas fa-film # 短视频、动漫、电影、电视剧、纪录片
+    游戏: /post/list/game/index/ || fas fa-gamepad # 截图、视频、攻略
+  留言板: /comment/ || fas fa-comment-dots
+  友链: /link/ || fas fa-link
+  关于||fas fa-heart:
+    入站须知: /about/ || fas fa-user
+    RSS: /rss2.xml || fas fa-rss
+    SITEMAP: /sitemap.xml || fas fa-sitemap
 
 # Hide the child menu items in mobile sidebar
 hide_sidebar_menu_child: false
@@ -25,10 +39,12 @@ hide_sidebar_menu_child: false
 # --------------------------------------
 
 highlight_theme: light #  darker / pale night / light / ocean / mac / mac light / false
-highlight_copy: true # copy button
+highlight_copy: true # copy button 代码复制
 highlight_lang: true # show the code language
+# 代码展开
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
 highlight_height_limit: false # unit: px
+# 代码换行
 code_word_wrap: false
 
 # copy settings
@@ -36,15 +52,17 @@ code_word_wrap: false
 copy:
   enable: true
   copyright:
-    enable: false
+    enable: true
     limit_count: 50
 
 # social settings (社交圖標設置)
 # formal:
 #   icon: link || the description
 social:
-  # fab fa-github: https://github.com/xxxxx || Github
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email
+  fab fa-github: https://github.com/1075309047 || Github
+  fas fa-music: https://music.163.com/user/home?id=1370121614 || 网易云音乐
+  fas fa-tv: https://space.bilibili.com/167228043 || 哔哩哔哩
+  fas fa-envelope: mailto:1075309047@qq.com || 电子邮箱
 
 # search (搜索)
 # --------------------------------------
@@ -57,7 +75,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
 
 # Math (數學)
 # --------------------------------------
@@ -85,20 +103,23 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
+  img: https://cdn.jsdelivr.net/gh/1075309047/cdn@master/images/sakura/custom/avatar.jpg
   effect: false
 
 # Disable all banner image
 disable_top_img: false
-
+# 顶部图
+# 自建页面 和 文章页 的顶部图请到对应 md 的front-matter中的 top_img 设置
+# 不推薦為每個 tag 和每個 category 都配置不同的頂部圖，因為配置太多會拖慢生成速度
 # The banner image of home page
-index_img:
+index_img: https://cdn.jsdelivr.net/gh/1075309047/cdn@master/images/fantasy/aa1b5e1cf6b165fae23.jpg
 
+# 頁面 默認的 top_img
 # If the banner of page not setting, it will show the top_img
-default_top_img:
+default_top_img: https://cdn.jsdelivr.net/gh/1075309047/cdn@master/images/landscape/wallhaven-45yde1.jpg
 
 # The banner image of archive page
-archive_img:
+archive_img: https://cdn.jsdelivr.net/gh/1075309047/cdn@master/images/fantasy/439347f480a426.jpg
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
@@ -108,6 +129,7 @@ tag_img:
 # format:
 #  - tag name: xxxxx
 tag_per_img:
+  butterfly: https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
@@ -117,7 +139,9 @@ category_img:
 # format:
 #  - category name: xxxxx
 category_per_img:
+  hexo: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
 
+# 文章封面
 cover:
   # display the cover or not (是否顯示文章封面)
   index_enable: true
@@ -127,8 +151,30 @@ cover:
   # left/right/both
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
+  # 當配置多張圖片時,會隨機選擇一張作為cover
   default_cover:
-    # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+    - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+    - https://cdn.jsdelivr.net/gh/1075309047/cdn@master/images/landscape/as36b61f45dfaa.jpg
+    - https://cdn.jsdelivr.net/gh/1075309047/cdn@master/images/landscape/d5aa13fc6f9a6b0.jpg
+    - https://cdn.jsdelivr.net/gh/1075309047/cdn@master/images/landscape/wallhaven-012v73.jpg
+    - https://cdn.jsdelivr.net/gh/1075309047/cdn@master/images/landscape/wallhaven-45yde1.jpg
+    - https://cdn.jsdelivr.net/gh/1075309047/cdn@master/images/landscape/wallhaven-49p288.jpg
+    - https://cdn.jsdelivr.net/gh/1075309047/cdn@master/images/landscape/wallhaven-4d8g7m.png
+    - https://cdn.jsdelivr.net/gh/1075309047/cdn@master/images/landscape/wallhaven-4grp97.jpg
+    - https://cdn.jsdelivr.net/gh/1075309047/cdn@master/images/landscape/wallhaven-6qxxvq.jpg
+    - https://cdn.jsdelivr.net/gh/1075309047/cdn@master/images/landscape/wallhaven-8x2oz2.jpg
+    - https://cdn.jsdelivr.net/gh/1075309047/cdn@master/images/landscape/wallhaven-dgzj9o.jpg
+    - https://cdn.jsdelivr.net/gh/1075309047/cdn@master/images/landscape/wallhaven-eoev5k.jpg
+    - https://cdn.jsdelivr.net/gh/1075309047/cdn@master/images/landscape/wallhaven-mdp79y.jpg
+    - https://cdn.jsdelivr.net/gh/1075309047/cdn@master/images/landscape/wallhaven-n6r8g6.jpg
+    - https://cdn.jsdelivr.net/gh/1075309047/cdn@master/images/landscape/wallhaven-nm2ml9.jpg
+    - https://cdn.jsdelivr.net/gh/1075309047/cdn@master/images/landscape/wallhaven-nm57wy.jpg
+    - https://cdn.jsdelivr.net/gh/1075309047/cdn@master/images/landscape/wallhaven-nmm11k.jpg
+    - https://cdn.jsdelivr.net/gh/1075309047/cdn@master/images/landscape/wallhaven-nmvx21.jpg
+    - https://cdn.jsdelivr.net/gh/1075309047/cdn@master/images/landscape/wallhaven-odjk3m.jpg
+    - https://cdn.jsdelivr.net/gh/1075309047/cdn@master/images/landscape/wallhaven-x8jj9o.png
+    - https://cdn.jsdelivr.net/gh/1075309047/cdn@master/images/landscape/wallhaven-yjjglx.jpg
+    - https://cdn.jsdelivr.net/gh/1075309047/cdn@master/images/landscape/wallhaven-ym3rpk.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -143,23 +189,23 @@ error_404:
 
 post_meta:
   page: # Home Page
-    date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
+    date_type: both # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
     date_format: date # date/relative 顯示日期還是相對日期
     categories: true # true or false 主頁是否顯示分類
-    tags: false # true or false 主頁是否顯示標籤
+    tags: true # true or false 主頁是否顯示標籤
     label: true # true or false 顯示描述性文字
   post:
     date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
-    date_format: date # date/relative 顯示日期還是相對日期
+    date_format: relative # date/relative 顯示日期還是相對日期
     categories: true # true or false 文章頁是否顯示分類
     tags: true # true or false 文章頁是否顯示標籤
     label: true # true or false 顯示描述性文字
 
 # wordcount (字數統計)
 wordcount:
-  enable: false
+  enable: true
   post_wordcount: true
-  min2read: true
+  min2read: true # 阅读时长
   total_wordcount: true
 
 # Display the article introduction on homepage
@@ -167,8 +213,8 @@ wordcount:
 # 2: both (if the description exists, it will show description, or show the auto_excerpt)
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
-index_post_content:
-  method: 3
+index_post_content: # 主页文章节选
+  method: 2
   length: 500 # if you set method to 2 or 3, the length need to config
 
 # Post
@@ -178,14 +224,16 @@ index_post_content:
 toc:
   enable: true
   number: true
-  style_simple: false
+  style_simple: true # 侧边栏只顯示TOC
 
+# 文章版權
 post_copyright:
   enable: true
-  decode: false
+  decode: false # 解码中文网址
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
+# 文章打賞
 # Sponsor/reward
 reward:
   enable: false
@@ -205,10 +253,11 @@ post_edit:
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
   url:
 
+# 相关文章 推薦的原理是根據文章tags的比重來推薦
 # Related Articles
 related_post:
   enable: true
-  limit: 6 # Number of posts displayed
+  limit: 3 # Number of posts displayed
   date_type: created # or created or updated 文章日期顯示創建日或者更新日
 
 # figcaption (圖片描述文字)
@@ -219,17 +268,18 @@ photofigcaption: false
 # 1: The 'next post' will link to old post
 # 2: The 'next post' will link to new post
 # false: disable pagination
-post_pagination: 1
+post_pagination: 2
 
-# anchor
+# anchor 文章錨點
 # when you scroll in post, the URL will update according to header id.
 anchor: false
 
 # Displays outdated notice for a post (文章過期提醒)
+# 以更新時間為基準。
 noticeOutdate:
-  enable: false
+  enable: true
   style: flat # style: simple/flat
-  limit_day: 500 # When will it be shown
+  limit_day: 365 # When will it be shown
   position: top # position: top/bottom
   message_prev: It has been
   message_next: days since the last update, the content of the article may be outdated.
@@ -411,7 +461,7 @@ footer:
   owner:
     enable: true
     since: 2020
-  custom_text:
+  custom_text: Hi, welcome to my <a href="https://1075309047.github.io/blog">blog</a>!
   copyright: true # Copyright of theme and framework
 
 # Analysis
@@ -644,23 +694,23 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/jerryc127/hexo-theme-butterfly
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: Have fun!
   card_recent_post:
     enable: true
-    limit: 5 # if set 0 will show all
+    limit: 3 # if set 0 will show all
     sort: date # date or updated
     sort_order: # Don't modify the setting unless you know how it works
   card_categories:
     enable: true
     limit: 8 # if set 0 will show all
-    expand: none # none/true/false
+    expand: false # none/true/false
     sort_order: # Don't modify the setting unless you know how it works
   card_tags:
     enable: true
-    limit: 40 # if set 0 will show all
+    limit: 20 # if set 0 will show all
     color: false
     sort_order: # Don't modify the setting unless you know how it works
   card_archives:
@@ -668,7 +718,7 @@ aside:
     type: monthly # yearly or monthly
     format: MMMM YYYY # eg: YYYY年MM月
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
-    limit: 8 # if set 0 will show all
+    limit: 6 # if set 0 will show all
     sort_order: # Don't modify the setting unless you know how it works
   card_webinfo:
     enable: true
@@ -686,12 +736,12 @@ busuanzi:
 # Time difference between publish date and now (網頁運行時間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
-  enable: false
-  publish_date:
+  enable: true
+  publish_date: 2021/6/1 00:00:00
 
 # Aside widget - Newest Comments
 newest_comments:
-  enable: false
+  enable: true
   sort_order: # Don't modify the setting unless you know how it works
   limit: 6
   storage: 10 # unit: mins, save data to localStorage
@@ -701,11 +751,11 @@ newest_comments:
 # --------------------------------------
 
 # Change font size
-change_font_size: false
+change_font_size: true
 
 # Conversion between Traditional and Simplified Chinese (簡繁轉換)
 translate:
-  enable: false
+  enable: true
   # The text of a button
   default: 繁
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
@@ -729,7 +779,7 @@ darkmode:
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
-  autoChangeMode: false
+  autoChangeMode: true
 
 # Lightbox (圖片大圖查看模式)
 # --------------------------------------
@@ -754,18 +804,19 @@ mermaid:
   theme: default
 
 # Note (Bootstrap Callout)
-note:
+note: # 标注
   # Note tag style values:
   #  - simple    bs-callout old alert style. Default.
   #  - modern    bs-callout new (v2-v3) alert style.
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
-  style: flat
+  style: simple
   icons: true
   border_radius: 3
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0
+# icons和light_bg_offset只對方法一生效
 
 # other
 # --------------------------------------
