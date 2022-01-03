@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://1075309047.github.io/blog/post/list/picture/poster/</loc>
+    <loc>https://1075309047.github.io/blog/post/list/music/mv/%E3%80%8A%E5%A5%B3%E5%84%BF%E6%83%85%E3%80%8B/</loc>
     
     <lastmod>2022-01-03</lastmod>
     
@@ -11,34 +11,7 @@
   </url>
   
   <url>
-    <loc>https://1075309047.github.io/blog/post/list/picture/index/</loc>
-    
-    <lastmod>2022-01-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://1075309047.github.io/blog/post/list/picture/illustration/</loc>
-    
-    <lastmod>2022-01-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://1075309047.github.io/blog/post/list/picture/wallpaper/</loc>
-    
-    <lastmod>2022-01-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://1075309047.github.io/blog/post/hexo/hello-world/</loc>
+    <loc>https://1075309047.github.io/blog/post/list/music/mv/%E3%80%8A%E8%B5%B7%E9%A3%8E%E4%BA%86%E3%80%8B/</loc>
     
     <lastmod>2022-01-03</lastmod>
     
@@ -110,6 +83,60 @@
   </url>
   
   <url>
+    <loc>https://1075309047.github.io/blog/post/hexo/hello-world/</loc>
+    
+    <lastmod>2022-01-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://1075309047.github.io/blog/post/list/picture/poster/</loc>
+    
+    <lastmod>2022-01-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://1075309047.github.io/blog/post/list/picture/index/</loc>
+    
+    <lastmod>2022-01-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://1075309047.github.io/blog/post/list/picture/illustration/</loc>
+    
+    <lastmod>2022-01-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://1075309047.github.io/blog/post/list/movie/animation/%E3%80%8A%E9%A3%8E%E4%BA%91%E5%86%B3%E3%80%8B/</loc>
+    
+    <lastmod>2022-01-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://1075309047.github.io/blog/post/list/picture/wallpaper/</loc>
+    
+    <lastmod>2022-01-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://1075309047.github.io/blog/post/hexo/advanced-butterfly/</loc>
     
     <lastmod>2022-01-02</lastmod>
@@ -131,6 +158,24 @@
     <loc>https://1075309047.github.io/blog/post/markdown/hello-markdown/</loc>
     
     <lastmod>2022-01-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://1075309047.github.io/blog/post/list/music/mv/%E3%80%8A%E6%81%8B%E7%88%B1%E5%BE%AA%E7%8E%AF%E3%80%8B/</loc>
+    
+    <lastmod>2021-12-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://1075309047.github.io/blog/post/list/music/mv/%E3%80%8A%E7%9B%B4%E5%88%B0%E4%B8%96%E7%95%8C%E7%9A%84%E5%B0%BD%E5%A4%B4%E3%80%8B/</loc>
+    
+    <lastmod>2021-12-05</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -180,6 +225,27 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://1075309047.github.io/blog/tags/animation/</loc>
+    <lastmod>2022-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://1075309047.github.io/blog/tags/childhood/</loc>
+    <lastmod>2022-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://1075309047.github.io/blog/tags/mv/</loc>
+    <lastmod>2022-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -198,6 +264,20 @@
   
   <url>
     <loc>https://1075309047.github.io/blog/categories/picture/</loc>
+    <lastmod>2022-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://1075309047.github.io/blog/categories/movie/</loc>
+    <lastmod>2022-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://1075309047.github.io/blog/categories/music/</loc>
     <lastmod>2022-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
