@@ -23,7 +23,7 @@ menu:
     图画: /post/list/picture/index/ || fas fa-images # 海报、壁纸、插画
     音频: /post/list/audio/index/ || fas fa-headphones
     音乐: /post/list/music/index/ || fas fa-music # 歌曲、mv、混剪
-    影视: /post/list/movies/index/ || fas fa-film # 短视频、动漫、电影、电视剧、纪录片
+    影视: /post/list/movie/index/ || fas fa-film # 短视频、动漫、电影、电视剧、纪录片
     游戏: /post/list/game/index/ || fas fa-gamepad # 截图、视频、攻略
   留言板: /comment/ || fas fa-comment-dots
   友链: /link/ || fas fa-link
