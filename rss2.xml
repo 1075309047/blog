@@ -15,8 +15,52 @@
     <atom:link href="https://1075309047.github.io/blog/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>这个人很懒，就留下了一句话。</description>
-    <pubDate>Mon, 03 Jan 2022 18:10:52 GMT</pubDate>
+    <pubDate>Sun, 01 May 2022 12:42:08 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>五一假期</title>
+      <link>https://1075309047.github.io/blog/post/life/word/20220501/</link>
+      <guid>https://1075309047.github.io/blog/post/life/word/20220501/</guid>
+      <pubDate>Sun, 01 May 2022 12:42:08 GMT</pubDate>
+      
+      <description>五一游玩</description>
+      
+      
+      
+      
+      <category domain="https://1075309047.github.io/blog/categories/chongqing/">chongqing</category>
+      
+      
+      <category domain="https://1075309047.github.io/blog/tags/play/">play</category>
+      
+      
+      <comments>https://1075309047.github.io/blog/post/life/word/20220501/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://1075309047.github.io/blog/post/hexo/hello-world/</link>
+      <guid>https://1075309047.github.io/blog/post/hexo/hello-world/</guid>
+      <pubDate>Sun, 01 May 2022 08:18:58 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</description>
+          
+        
+      
+      
+      
+      
+      
+      
+      <comments>https://1075309047.github.io/blog/post/hexo/hello-world/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>MV《女儿情》</title>
@@ -57,29 +101,6 @@
       
       
       <comments>https://1075309047.github.io/blog/post/list/music/mv/%E3%80%8A%E8%B5%B7%E9%A3%8E%E4%BA%86%E3%80%8B/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>https://1075309047.github.io/blog/post/hexo/hello-world/</link>
-      <guid>https://1075309047.github.io/blog/post/hexo/hello-world/</guid>
-      <pubDate>Mon, 03 Jan 2022 16:17:36 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</description>
-          
-        
-      
-      
-      
-      
-      
-      
-      <comments>https://1075309047.github.io/blog/post/hexo/hello-world/#disqus_thread</comments>
       
     </item>
     
